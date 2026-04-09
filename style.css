@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #212121;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+header p {
+  max-width: 800px;
+  margin: 1rem auto 0;
+  color: #dcdcdc;
+}
+
+main {
+  padding: 2rem 1.5rem;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.destacada {
+  background: linear-gradient(135deg, #ff4f7a 0%, #ff935c 100%);
+  border-radius: 24px;
+  color: #fff;
+  padding: 2rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+.destacada-contenido {
+  max-width: 720px;
+}
+
+.destacada .tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.destacada h2 {
+  margin-top: 0.5rem;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.destacada p {
+  font-size: 1.05rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.boton {
+  display: inline-block;
+  background: #fff;
+  color: #111;
+  padding: 0.95rem 1.75rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+section {
+  margin-bottom: 1.75rem;
+}
+
+section h2 {
+  margin-bottom: 0.75rem;
+  color: #111;
+}
+
+section p {
+  max-width: 760px;
+}
+
+@media (max-width: 640px) {
+  .destacada {
+    padding: 1.5rem;
+  }
+
+  .boton {
+    width: 100%;
+    text-align: center;
+  }
+}
